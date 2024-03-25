@@ -1,10 +1,6 @@
 import streamlit as st
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_option('deprecation.showfileUploaderEncoding', False)
-
-# Define o tema da aplicação
-# Escolha o tema desejado, por exemplo, 'light' ou 'dark'
-st.set_theme('light')
 st.markdown("<h1 style='color: #0098A2;'>Prioritization Tool</h1>", unsafe_allow_html=True)
 
 safety = st.selectbox("What influence does the task have on **Safety** ?",
