@@ -1,6 +1,5 @@
 import streamlit as st
 st.markdown("<h1 style='color: #0098A2;'>Prioritization Tool</h1>", unsafe_allow_html=True)
-st.title("Prioritization Tool")
 
 safety = st.selectbox("What influence does the task have on **Safety** ?",
                       ("NONE",
