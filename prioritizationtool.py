@@ -90,9 +90,9 @@ if total_sum >=4:
 elif total_sum>= 3:
     prioritylvl="**Major**"
 elif total_sum>=2:
-    prioritylvl="**High**"
-else :
     prioritylvl="**Minor**"
+else :
+    prioritylvl="**Trivial**"
 
 
 st.write("Priority level:", prioritylvl)
