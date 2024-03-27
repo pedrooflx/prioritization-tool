@@ -50,7 +50,7 @@ if cost_radio=="Project Cost":
                                  "3 – This equipment will result in a cost saving between 25k-50k€ in 1 year",
                                  "2 – This equipment will result in a cost saving between 1k-25k€ in 1 year",
                                  "1 – This equipment doesn’t bring any cost saving"))
-    #projectnum = 0 if project_cost == " " else int(project_cost.split("–")[0].strip())
+    projectnum = 0 if project_cost == " " else int(project_cost.split("–")[0].strip())
 
 else:
 
@@ -61,15 +61,15 @@ else:
                                             "3 – This maintenance operation will result in a cost saving between 12,5k-25k€ in 1 year",
                                             "2 – This maintenance operation will result in a cost saving between 1k-12,5k€ in 1 year",
                                             "1 – This maintenance operation doesn’t bring any cost saving"))
-   # tooling_maintenance_cost_num = 0 if tooling_maintenance_cost == "NONE" else int(tooling_maintenance_cost.split("–")[0].strip())
+    tooling_maintenance_cost_num = 0 if tooling_maintenance_cost == "NONE" else int(tooling_maintenance_cost.split("–")[0].strip())
 
 
 manager_factor=st.radio("Select manager factor:",("5","4","3","2","1"))
 
-#sa_num = 0 if safety == "NONE" else int(safety.split("–")[0].strip())
-#q_num = 0 if quality == "NONE" else int(quality.split("–")[0].strip())
-#ca_num = 0 if capacity == "NONE" else int(capacity.split("–")[0].strip())
-#cy_num = 0 if cycle_time == "NONE" else int(cycle_time.split("–")[0].strip())
+sa_num = 0 if safety == "NONE" else int(safety.split("–")[0].strip())
+q_num = 0 if quality == "NONE" else int(quality.split("–")[0].strip())
+ca_num = 0 if capacity == "NONE" else int(capacity.split("–")[0].strip())
+cy_num = 0 if cycle_time == "NONE" else int(cycle_time.split("–")[0].strip())
 
 
 mf_num=int(manager_factor)
