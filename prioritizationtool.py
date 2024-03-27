@@ -64,7 +64,7 @@ else:
     tooling_maintenance_cost_num = 0 if tooling_maintenance_cost == "NONE" else int(tooling_maintenance_cost.split("–")[0].strip())
 
 
-manager_factor=st.radio("Select manager factor:",("5","4","3","2","1"))
+manager_factor=st.radio("Select **manager factor**:",("5","4","3","2","1"))
 
 sa_num = 0 if safety == "NONE" else int(safety.split("–")[0].strip())
 q_num = 0 if quality == "NONE" else int(quality.split("–")[0].strip())
